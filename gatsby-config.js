@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby + Themes`,
-    description: `Gatsby and Themes presented - delivered at React Finland on 04-25-2019`,
+    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@schaudustin`,
   },
   __experimentalThemes: [
