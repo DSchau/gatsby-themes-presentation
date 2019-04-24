@@ -35,7 +35,6 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "postbuild": "npm run optimize",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
     "preoptimize": "mkdir -p static/images",
