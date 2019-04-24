@@ -27,7 +27,7 @@ const TwitterIcon = styled(FaTwitter)`
   margin-left: 1rem;
 `
 
-export default function Banner({ children = 'gatsbythemes.dustinschau.com', twitter = false, ...rest }) {
+export default function Banner({ children = 'dschau.dev/gatsbythemes', twitter = false, ...rest }) {
   return (
     <Container {...rest}>
       <Fit max={48}>
