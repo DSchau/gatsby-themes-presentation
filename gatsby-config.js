@@ -1,8 +1,7 @@
 module.exports = {
-  pathPrefix: `/gatsby-and-themes`,
   siteMetadata: {
     title: `Gatsby + Themes`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    description: `Gatsby and Themes presented - delivered at React Finland on 04-25-2019`,
     author: `@schaudustin`,
   },
   __experimentalThemes: [
