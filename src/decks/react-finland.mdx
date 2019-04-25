@@ -272,6 +272,27 @@ npm i @mdx-deck/gatsby-theme
 <Fit>Talk is cheap.</Fit>
 <Fit caps={true} style={{ backgroundColor: `black`, color: 'white' }}>Demo</Fit>
 
+<span style={{ position: `fixed`, bottom: 8, left: 0 }}>
+  <Fit max={80}>react-finland-gatsby.netlify.com</Fit>
+</span>
+
+---
+
+## 🙏 Shout out to all the amazing people building themes 🙏
+
+<Grid cols={3}>
+  {
+    [
+      'chris.png',
+      'john-o.jpg',
+      'brent.jpg',
+      'jason.jpg',
+      'michal.jpg'
+    ]
+      .map(src => <img src={`/images/contributors/${src}`} key={src} style={{ maxHeight: '20vh'  }} />)
+  }
+</Grid>
+
 ---
 
 <Fit caps={true}>Themes constitute an</Fit>
@@ -296,7 +317,3 @@ npm i @mdx-deck/gatsby-theme
 <Fit>Thank you!</Fit>
 
 <ReactFinland fill="black" />
-
----
-
-## 🙏 Shout out to all the amazing people building themes 🙏
