@@ -283,13 +283,14 @@ npm i @mdx-deck/gatsby-theme
 <Grid cols={3}>
   {
     [
-      'chris.png',
-      'john-o.jpg',
-      'brent.jpg',
-      'jason.jpg',
-      'michal.jpg'
+      ['chris.png', `chrisbiscardi`],
+      ['john-o.jpg', `4lpine`],
+      ['brent.jpg', `jxnblk`],
+      ['mikhail.jpg', `freiksenet`],
+      ['jason.jpg', `jlengstorf`],
+      ['michal.jpg', `mipiechowiak`]
     ]
-      .map(src => <img src={`/images/contributors/${src}`} key={src} style={{ maxHeight: '20vh'  }} />)
+      .map(([src, twitter]) => <a href={`https://twitter.com/${twitter}`} key={src}><img src={`/images/contributors/${src}`} style={{ maxHeight: '20vh'  }} /></a>)
   }
 </Grid>
 
