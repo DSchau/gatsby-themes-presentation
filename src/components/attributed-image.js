@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 import Image from './image'
 
 const AttributionContainer = styled.div`
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);

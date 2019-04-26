@@ -2,12 +2,12 @@ import { Background, FullScreenCode, Invert, Title } from '../layouts'
 import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, TweetEmbed } from '../components'
 
 <Title>
-  <span style={{ position: 'fixed', top: '1rem', left: '50%', transform: 'translateX(-50%)' }}>
+  <span style={{ position: 'absolute', top: '-8rem', left: '50%', transform: 'translateX(-50%)' }}>
     <h4 style={{ margin: 0, textAlign: 'center', fontSize: 40, color: '#639', padding: '0.25rem 0.5rem', backgroundColor: 'rgba(255, 255, 255, 0.85)', border: '4px solid #639' }}>Dustin Schau</h4>
   </span>
   <h1 style={{ backgroundColor: 'black', color: 'white', margin: 0, fontSize: '10vw', padding: '1rem' }}>Gatsby + Themes</h1>
   <h2 style={{ color: 'white', backgroundColor: '#639', margin: 0 }}>The Future of Gatsby</h2>
-  <Link style={{ position: 'fixed', top: 10, right: 0 }} href="https://react-finland.fi">
+  <Link style={{ position: 'absolute', top: '-8rem', right: '-4rem' }} href="https://react-finland.fi">
     <ReactFinland fill="#000" height={60} />
   </Link>
 </Title>
@@ -26,7 +26,7 @@ import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, Twe
 
 <Background background="#663399">
 
-  <img src="/images/gatsby-logo-inverted.png" alt="Gatsby logo" style={{ maxHeight: '40vh' }} />
+  <img src="images/gatsby-logo-inverted.png" alt="Gatsby logo" style={{ maxHeight: '40vh' }} />
 
 </Background>
 
@@ -40,14 +40,14 @@ import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, Twe
 ---
 
 <Background background="#000">
-  <img src="/images/reactjsorg.png" style={{ maxHeight: '60vh' }} />
+  <img src="images/reactjsorg.png" style={{ maxHeight: '60vh' }} />
 </Background>
 
 ---
 
 <Background background="#663399">
 
-  <img src="/images/kent-tweet.png" style={{ maxHeight: '25vh' }} />
+  <img src="images/kent-tweet.png" style={{ maxHeight: '25vh' }} />
 
 </Background>
 
@@ -55,9 +55,9 @@ import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, Twe
 
 <Background background="#663399">
 
-  <img src="/images/dan-tweet.png" style={{ maxHeight: '50vh' }} />
+  <img src="images/dan-tweet.png" style={{ maxHeight: '50vh' }} />
 
-  <span style={{ position: `fixed`, bottom: 8, left: '50%', transform: 'translateX(-50%)' }}>
+  <span style={{ position: `absolute`, bottom: 8, left: '50%', transform: 'translateX(-50%)' }}>
     <p style={{ margin: 0, fontSize: 14 }}>also fight me dan 😜</p>
   </span>
 
@@ -77,13 +77,13 @@ import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, Twe
 
 ---
 
-<Image src="/images/react-boilerplate.png" alt="React Boilerplate on Github" darken={0.5}>
+<Image src="images/react-boilerplate.png" alt="React Boilerplate on Github" darken={0.5}>
   <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-boilerplate</Fit>
 </Image>
 
 ---
 
-<Image src="/images/react-slingshot.png" alt="React Slingshot on Github" darken={0.5}>
+<Image src="images/react-slingshot.png" alt="React Slingshot on Github" darken={0.5}>
   <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-slingshot</Fit>
 </Image>
 
@@ -101,13 +101,13 @@ import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, Twe
 
 ---
 
-<Image src="/images/legos.jpg" alt="Assortment of legos representing building blocks" darken={0.5}>
-  <img src="/images/legos-tweet.png" style={{ maxHeight: '25vh' }} />
+<Image src="images/legos.jpg" alt="Assortment of legos representing building blocks" darken={0.5}>
+  <img src="images/legos-tweet.png" style={{ maxHeight: '25vh' }} />
 </Image>
 
 ---
 
-<Image src="/images/yellow-house.jpg" alt="Yellow lego house representing issue with cloning boilerplates" darken={0.5} />
+<Image src="images/yellow-house.jpg" alt="Yellow lego house representing issue with cloning boilerplates" darken={0.5} />
 
 ---
 
@@ -161,11 +161,11 @@ import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, Twe
 
 ---
 
-<AttributedImage src="/images/gatsby-site.png" cite="Kyle Gill" backgroundSize="contain" />
+<AttributedImage src="images/gatsby-site.png" cite="Kyle Gill" backgroundSize="contain" />
 
 ---
 
-<AttributedImage src="/images/gatsby-themes-site.png" cite="Kyle Gill" backgroundSize="contain" />
+<AttributedImage src="images/gatsby-themes-site.png" cite="Kyle Gill" backgroundSize="contain" />
 
 ---
 
@@ -182,7 +182,7 @@ import { AttributedImage, Box, ReactFinland, Grid, Fit, Link, Image, Social, Twe
 
 ---
 
-<AttributedImage src="/images/static-blog-3-posts.jpg" cite="Mark Dalgleish" backgroundSize="contain" />
+<AttributedImage src="images/static-blog-3-posts.jpg" cite="Mark Dalgleish" backgroundSize="contain" />
 
 ---
 
@@ -230,7 +230,7 @@ npm i @mdx-deck/gatsby-theme
 
 ---
 
-<AttributedImage src="/images/atomic-design.png" alt="Atomic Design by Brad Frost" cite={`"Atomic Design" by Brad Frost`} />
+<AttributedImage src="images/atomic-design.png" alt="Atomic Design by Brad Frost" cite={`"Atomic Design" by Brad Frost`} />
 
 ---
 
@@ -243,9 +243,9 @@ npm i @mdx-deck/gatsby-theme
 <Grid cols={3}>
   {
     [
-      '/images/block.png',
-      '/images/theme.png',
-      '/images/app.png'
+      'images/block.png',
+      'images/theme.png',
+      'images/app.png'
     ]
       .map(img => (
         <img alt={img.split('/').pop().split('.').shift()} key={img} src={img} style={{ maxHeight: '30vw' }} />
@@ -278,7 +278,7 @@ npm i @mdx-deck/gatsby-theme
 <Fit>Talk is cheap.</Fit>
 <Fit caps={true} style={{ backgroundColor: `black`, color: 'white' }}>Demo</Fit>
 
-<span style={{ position: `fixed`, bottom: 8, left: 0 }}>
+<span style={{ position: `absolute`, bottom: 8, left: 0 }}>
   <Fit max={80}>react-finland-gatsby.netlify.com</Fit>
 </span>
 
@@ -296,7 +296,7 @@ npm i @mdx-deck/gatsby-theme
       ['jason.jpg', `jlengstorf`],
       ['michal.jpg', `mipiechowiak`]
     ]
-      .map(([src, twitter]) => <a href={`https://twitter.com/${twitter}`} key={src}><img src={`/images/contributors/${src}`} style={{ maxHeight: '20vh'  }} /></a>)
+      .map(([src, twitter]) => <a href={`https://twitter.com/${twitter}`} key={src}><img src={`images/contributors/${src}`} style={{ maxHeight: '20vh'  }} /></a>)
   }
 </Grid>
 
@@ -308,7 +308,7 @@ npm i @mdx-deck/gatsby-theme
 
 ---
 
-<Image src="/images/building-legos.jpg" alt="Building legos to represent building new themes with Gatsby" darken={0.75}>
+<Image src="images/building-legos.jpg" alt="Building legos to represent building new themes with Gatsby" darken={0.75}>
   <Fit style={{ color: `white` }}>We can't wait</Fit>
   <Fit style={{ color: `white` }}>to see what <em>you</em> build.</Fit>
 </Image>
