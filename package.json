@@ -7,6 +7,7 @@
     "mdx-deck": "^3.0.9"
   },
   "scripts": {
+    "build": "mdx-deck build deck.mdx",
     "start": "mdx-deck deck.mdx"
   },
   "dependencies": {
