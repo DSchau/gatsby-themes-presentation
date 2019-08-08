@@ -1,53 +1,22 @@
 {
-  "name": "@dschau/gatsby-and-themes",
-  "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Dustin Schau <dustin@gatsbyjs.com> (https://dustinschau.com)",
+  "name": "@dschau/midwestjs-themes",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "mdx-deck": "^3.0.9"
+  },
+  "scripts": {
+    "build": "mdx-deck build deck.mdx",
+    "start": "mdx-deck deck.mdx"
+  },
   "dependencies": {
     "@dschau/particles.js": "^2.0.0",
-    "@emotion/core": "^10.0.10",
-    "@emotion/styled": "^10.0.10",
-    "@mdx-deck/export": "^2.3.2",
-    "@mdx-deck/gatsby-theme": "^2.2.1",
-    "gatsby": "^2.3.16",
-    "gatsby-image": "^2.0.37",
-    "gatsby-plugin-manifest": "^2.0.28",
-    "gatsby-plugin-offline": "^2.0.25",
-    "gatsby-plugin-react-helmet": "^3.0.12",
-    "gatsby-plugin-sharp": "^2.0.32",
-    "gatsby-source-filesystem": "^2.0.29",
-    "gatsby-transformer-sharp": "^2.1.17",
-    "mdx-deck": "^1.0.0",
-    "prop-types": "^15.7.2",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "react-helmet": "^5.2.0",
-    "react-icons": "^3.6.1",
+    "@emotion/styled": "^10.0.15",
+    "@mdx-deck/layouts": "^2.5.0",
+    "gatsby": "^2.13.53",
+    "react-icons": "^3.7.0",
     "react-textfit": "^1.1.0",
-    "react-twitter-embed": "^2.0.7"
-  },
-  "devDependencies": {
-    "prettier": "^1.17.0"
-  },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "scripts": {
-    "build": "gatsby build",
-    "build:pdf": "mdx-deck-export pdf src/decks/react-finland.mdx",
-    "develop": "gatsby develop",
-    "format": "prettier --write src/**/*.{js,jsx}",
-    "start": "npm run develop -- --port 3000",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "react-twitter-embed": "^2.0.8"
   }
 }
