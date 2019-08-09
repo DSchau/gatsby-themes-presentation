@@ -6,6 +6,7 @@ const Container = styled.div([], props => ({
   fontWeight: 'bold',
   width: '100vw',
   padding: '0 2.5vw',
+  textAlign: 'center',
   ...(props.background && {
     background: props.background
   }),

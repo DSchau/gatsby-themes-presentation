@@ -18,6 +18,7 @@ const Attribution = styled.p`
   margin: 0;
   font-size: 22px;
   padding: 4px;
+  text-align: center;
 `
 
 export default function AttributedImage({ src, cite, ...rest }) {

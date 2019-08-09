@@ -1,6 +1,6 @@
 import { themes } from 'mdx-deck'
 import { Background, FullScreenCode, Invert, Title } from './layouts'
-import { AttributedImage, Box, MidwestJS, Grid, Fit, Image, Link, Social, TweetEmbed } from './components'
+import { AttributedImage, Box, Buffering, MidwestJS, Grid, Fit, Image as MdxDeckImage, Link, Prefetch, Pullquote, Social, TweetEmbed } from './components'
 
 import gatsbyLogo from './images/gatsby-logo-inverted.png'
 import reactJsOrg from './images/reactjsorg.png'
@@ -19,6 +19,9 @@ import block from './images/block.png'
 import themeImg from './images/theme.png'
 import app from './images/app.png'
 import buildingLegos from './images/building-legos.jpg'
+import webpageTestOld from './images/webpagetest-old.png'
+import webpageTestNew from './images/webpagetest-new.png'
+import addyPr from './images/addy-pr.png'
 
 import chris from './images/contributors/chris.png'
 import johnO from './images/contributors/john-o.jpg'
@@ -73,15 +76,27 @@ export const theme = [themes.dark, themes.prism]
 
 ---
 
-## Webpagetest
+<Background background="rebeccapurple" color="rebeccapurple">
 
-### [Result](https://www.webpagetest.org/result/190808_P5_d35ab3bc562907235fc074f740467ca9/)
+  <Pullquote cite="webdev subreddit" fontSize={40} padding={40} href="https://www.reddit.com/r/webdev/comments/9z5dsr/how_does_reactjs_have_such_a_fast_website/?ref=share&ref_source=link">Genuine question, every page is loaded immediatley [sic] on click. Seriously never seen such a quick website before. Any insight as to how they're able to achieve this?</Pullquote>
+
+</Background>
 
 ---
 
-## Webpagetest
+<img src={webpageTestOld} style={{ maxHeight: '75vh' }} />
 
-### [Result](https://www.webpagetest.org/result/190808_E5_0edaa3c0ab7d05c37f68d30880fd8e92/)
+### [Webpagetest Results](https://www.webpagetest.org/result/190808_P5_d35ab3bc562907235fc074f740467ca9/)
+
+---
+
+<img src={webpageTestNew} style={{ maxHeight: '75vh' }} />
+
+### [Webpagetest Results](https://www.webpagetest.org/result/190808_E5_0edaa3c0ab7d05c37f68d30880fd8e92/)
+
+---
+
+<Fit>🚀</Fit>
 
 ---
 
@@ -113,19 +128,156 @@ export const theme = [themes.dark, themes.prism]
 
 ---
 
+<Invert>
+<Fit caps={true}><span style={{ textDecoration: 'underline' }}>OK</span>. Great.</Fit>
+
+<Fit>But what even <em>is</em> Gatsby?</Fit>
+</Invert>
+
+---
+
+```jsx
+import React from 'react'
+
+function OhShitWaddup() {
+  return <h1>It's dat boi</h1>
+}
+```
+
+---
+
+```jsx
+var React = require('react')
+
+function OhShitWaddup() {
+  return React
+    .createElement(
+      'h1',
+      null,
+      'It\'s dat boi'
+    )
+}
+```
+
+---
+
+```html
+<h1>It's dat boi</h1>
+```
+
+---
+
+<Invert>
+  <Fit>Gatsby is SSR at</Fit>
+  <Fit caps={true}>build time</Fit>
+</Invert>
+
+---
+
+<Fit><em>neat</em></Fit>
+
+---
+
+<Fit>🔥 fast, by default</Fit>
+
+<p style={{ position: 'fixed', bottom: 0, fontSize: 16 }}>We say this a lot&hellip; I know!</p>
+
+---
+
+## Perf. acronyms
+
+<Grid cols={3}>
+  {
+    [
+      'H/2',
+      'PRPL',
+      'RAIL',
+      'FLIP',
+      'SPA',
+      'SW',
+      'TTI',
+      'FMP',
+      'FCP',
+      'TTFP',
+      'PWA',
+      'TTFB'
+    ].map(itsAnInitalismDamnit => <span style={{ textAlign: 'center' }} key={itsAnInitalismDamnit}>{itsAnInitalismDamnit}</span>)
+  }
+</Grid>
+
+---
+
+<MdxDeckImage src="https://media.giphy.com/media/l41YtZOb9EUABnuqA/giphy.gif" darken={0.5}>
+  <Fit style={{ color: 'white' }}>How many do you actually <em>know</em>?</Fit>
+</MdxDeckImage>
+
+---
+
+<Invert>
+  <Fit>How?</Fit>
+</Invert>
+
+---
+
+<Fit>Modern APIs</Fit>
+
+---
+
+<div style={{ padding: '5rem', width: '100vw' }}>
+  <iframe src="https://codesandbox.io/embed/l70jj9p58m?&fontsize=14&hidenavigation=1&view=preview" title="l70jj9p58m" allow="geolocation; microphone; camera; midi; vr; accelerometer; gyroscope; payment; ambient-light-sensor; encrypted-media" style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;" sandbox="allow-modals allow-forms allow-popups allow-scripts allow-same-origin"></iframe>
+</div>
+
+---
+
+## `<link rel="prefetch" />`
+
+### Prefetch the _next_ resource
+
+---
+
+<Invert>
+  <Prefetch />
+</Invert>
+
+---
+
+<MdxDeckImage src={addyPr} />
+
+---
+
+<a href="https://using-gatsby-image.gatsbyjs.org"><video autoPlay={true} repeat={true} src="https://gatsby-is-great.netlify.com/assets/using-gatsby-image.mp4" /></a>
+
+---
+
+<Fit>Gatsby is <em>your</em> compiler for the web</Fit>
+
+<img src="https://gatsby-is-great.netlify.com/assets/gatsby-astronaut.png" style={{ marginTop: '5vh', maxHeight: '35vh' }} />
+
+---
+
+<Buffering />
+
+---
+
+<MdxDeckImage src="https://media.giphy.com/media/l0JMrPWRQkTeg3jjO/giphy.gif" darken={0.8}>
+  <Fit style={{ backgroundColor: 'black', color: 'white', padding: 10  }}>Finally&hellip; themes!</Fit>
+</MdxDeckImage>
+
+---
+
 ## Let's take a trip down memory lane...
 
 ---
 
-<Image src={reactBoilerplate} alt="React Boilerplate on Github" darken={0.5}>
+<MdxDeckImage src={reactBoilerplate} alt="React Boilerplate on Github" darken={0.5}>
   <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-boilerplate</Fit>
-</Image>
+</MdxDeckImage>
 
 ---
 
-<Image src={reactSlingshot} alt="React Slingshot on Github" darken={0.5}>
+<MdxDeckImage src={reactSlingshot} alt="React Slingshot on Github" darken={0.5}>
   <Fit style={{ backgroundColor: 'black', color: 'white', padding: '2rem' }}>react-slingshot</Fit>
-</Image>
+</MdxDeckImage>
 
 ---
 
@@ -141,13 +293,13 @@ export const theme = [themes.dark, themes.prism]
 
 ---
 
-<Image src={legos} alt="Assortment of legos representing building blocks" darken={0.5}>
+<MdxDeckImage src={legos} alt="Assortment of legos representing building blocks" darken={0.5}>
   <img src={legosTweet} style={{ maxHeight: '25vh' }} />
-</Image>
+</MdxDeckImage>
 
 ---
 
-<Image src={yellowhouse} alt="Yellow lego house representing issue with cloning boilerplates" darken={0.5} />
+<MdxDeckImage src={yellowhouse} alt="Yellow lego house representing issue with cloning boilerplates" darken={0.5} />
 
 ---
 
@@ -156,7 +308,7 @@ export const theme = [themes.dark, themes.prism]
 ---
 
 <div>
-  <h2 style={{ margin: 0 }}>Introducing&hellip;</h2>
+  <h2 style={{ margin: 0, textAlign: 'center' }}>Introducing&hellip;</h2>
   <Fit style={{ margin: 0, backgroundColor: 'rebeccapurple', color: `white` }} caps={true}>Gatsby Themes</Fit>
 </div>
 
@@ -172,7 +324,7 @@ export const theme = [themes.dark, themes.prism]
 
 ## These blocks can be:
 
-<Grid cols={3} style={{ height: '100%' }}>
+<Grid cols={3} style={{ height: '25%' }}>
   <Box background="black" color="white">shared</Box>
   <Box background="black" color="white">extended</Box>
   <Box background="black" color="white">customized</Box>
@@ -182,7 +334,7 @@ export const theme = [themes.dark, themes.prism]
 
 ## These blocks can be:
 
-<Grid cols={3} style={{ height: '100%' }}>
+<Grid cols={3} style={{ height: '25%' }}>
   {
     [
       'purely data driven',
@@ -312,10 +464,6 @@ npm i @mdx-deck/gatsby-theme
 <Fit>Talk is cheap.</Fit>
 <Fit caps={true} style={{ backgroundColor: `black`, color: 'white' }}>Demo</Fit>
 
-<span style={{ position: `absolute`, bottom: 8, left: 0 }}>
-  <Fit max={80}>react-finland-gatsby.netlify.com</Fit>
-</span>
-
 ---
 
 ## 🙏 Shout out to all the amazing people building themes 🙏
@@ -342,10 +490,10 @@ npm i @mdx-deck/gatsby-theme
 
 ---
 
-<Image src={buildingLegos} alt="Building legos to represent building new themes with Gatsby" darken={0.75}>
+<MdxDeckImage src={buildingLegos} alt="Building legos to represent building new themes with Gatsby" darken={0.75}>
   <Fit style={{ color: `white` }}>We can't wait</Fit>
-  <Fit style={{ color: `white` }}>to see what <em>you</em> build.</Fit>
-</Image>
+  <Fit style={{ color: `white` }}>to see what <span style={{ fontWeight: 'bold', textDecoration: 'underline' }}>you</span> build.</Fit>
+</MdxDeckImage>
 
 ---
 

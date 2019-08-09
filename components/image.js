@@ -29,14 +29,14 @@ const Darken = styled.div`
 `
 
 const Children = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
   z-index: 2;
 `
 function ImageComponent({ children, darken, src, ...rest }) {
   return (
-      null
+    <StyledImage src={src} {...rest}>
+      <Darken darken={darken} />
+      <Children>{children}</Children>
+    </StyledImage>
   )
 }
 

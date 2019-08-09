@@ -66,7 +66,7 @@ export default function Social() {
           <ListItem><FaGithub /> <Link href="https://github.com/dschau">dschau</Link></ListItem>
           <ListItem><FaGlobe /> <Link href="https://dustinschau.com">dustinschau.com</Link></ListItem>
           <ListItem><MdBusiness /> Gatsby</ListItem>
-          <ListItem><FaHome /> <del>Omaha, Nebraska</del> Mountain View, CA</ListItem>
+          <ListItem><FaHome /> <del style={{ color: '#FF9999' }}>Omaha, Nebraska</del> <span style={{ paddingLeft: 52, display: 'block' }}>Mountain View, CA</span></ListItem>
         </List>
         <Image src={me} />
       </Row>
