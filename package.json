@@ -1,8 +1,7 @@
 {
-  "name": "@dschau/midwestjs-themes",
+  "name": "@dschau/gatsby-themes-presentation",
   "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "devDependencies": {
     "mdx-deck": "^3.0.9"
   },
