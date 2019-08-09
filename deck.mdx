@@ -1,4 +1,4 @@
-import { themes } from 'mdx-deck'
+import { Head, themes } from 'mdx-deck'
 import { Background, FullScreenCode, Invert, Title } from './layouts'
 import { AttributedImage, Box, Buffering, MidwestJS, Grid, Fit, Image as MdxDeckImage, Link, Prefetch, Pullquote, Social, TweetEmbed } from './components'
 
@@ -33,6 +33,9 @@ import michal from './images/contributors/michal.jpg'
 export const theme = [themes.dark, themes.prism]
 
 <Title>
+  <Head>
+    <title>Gatsby and Themes: The Future of Gatsby</title>
+  </Head>
   <span style={{ position: 'fixed', top: '0.5rem', left: '50%', transform: 'translateX(-50%)' }}>
     <h4 style={{ margin: 0, textAlign: 'center', fontSize: 40, color: '#639', padding: '0.25rem 0.5rem', backgroundColor: 'rgba(255, 255, 255, 0.85)', border: '4px solid #639' }}>Dustin Schau</h4>
   </span>
@@ -497,8 +500,10 @@ npm i @mdx-deck/gatsby-theme
 
 ---
 
-<Background background="#663399" flexDirection="column">
-  <Fit>#buildWithGatsby</Fit>
+<Background background="rebeccapurple">
+  <Fit max={72}>We're hiring.</Fit>
+  <Fit>Join us.</Fit>
+  <Fit style={{ backgroundColor: 'white', color: 'rebeccapurple' }}>gatsbyjs.com/careers/</Fit>
 </Background>
 
 ---
